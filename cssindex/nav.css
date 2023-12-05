@@ -1,0 +1,122 @@
+@import url(style.css);
+
+.container1{
+    max-width: 1700px;
+    margin: auto;
+}
+
+.container1:last-child{
+    margin-right: 50px;
+}
+
+.flex{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    left: 0;
+    padding: 35px 4% ;
+    position: fixed;
+    top: 0;
+    transition: .5s;
+    width: 100%;
+}
+
+header img{
+    height: 50px;
+    width: 34px;
+}
+
+header.rolagem{
+    box-shadow: 0px 3.5px 0px var(--cor4);
+    background-color: var(--cor5);
+    padding: 10px 4%;
+}
+
+header.rolagem a{
+    color: var(--cor1);
+    text-shadow: none;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul a{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.59);
+    color: var(--cor5);
+    font-family: var(--fontsecun);
+    font-weight: 700;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+
+/**animação de linha**/
+
+    background-image: linear-gradient(var(--cor5), var(--cor5));
+    background-size: 0% 4px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size .2s ease;
+}
+
+header a{
+    background-image: none;
+}
+
+header a:hover{
+    background-size: 100% 4px;
+}
+
+header.rolagem ul a{
+    background-image: linear-gradient(var(--cor1), var(--cor1));
+    background-size: 0% 4px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size .2s ease;
+}
+
+header.rolagem a:hover{
+    background-size: 100% 4px;
+}
+
+/**animação de linha**/
+
+@media screen and (max-width: 950px) /**ipad**/{
+
+    header img{
+        height: 45px;
+        width: 29px;
+        display: inline-block;
+    }
+
+    header{
+        margin-right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+    header.rolagem{
+        height: 60px;
+    }
+
+    header a:active{
+        background-image: none;
+    }
+
+    header img{
+        height: 40px;
+        width: 26px;
+    }
+    
+    .flex a{
+        font-size: 12px;
+    }
+
+    header{
+        margin-right: 10px;
+    }
+}

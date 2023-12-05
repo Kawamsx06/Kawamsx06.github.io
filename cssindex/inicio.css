@@ -1,0 +1,160 @@
+@import url(style.css);
+
+/**INICIO**/
+.banner{
+    background-image: url("csstrabalho/imagens/fundoini.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 105vh;
+    display: flex;
+    align-items: center;
+}
+
+
+#boxini{
+    border-radius: 10px;
+    padding: 30px 30px 30px 5px;
+    margin-left: 8%;
+    font-size: 30px;    
+    color: #fff;
+    font-family: var(--fontsecun);
+}
+
+.wrapper{
+    height: 100vh;
+}
+
+.typing{
+    width: 101%;
+    animation: typing 2s steps(22), blink .8s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 70px;
+    color: var(--cor5);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.588);
+    border-right: 3px solid #fff;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
+/**INICIO**/
+
+/**HABILIDADES**/
+
+#hab{
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills{
+    background-color: #fff;
+    width: 65%;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.skills ul{
+    list-style: none;
+}
+
+.skills ul li{
+    margin: 20px 0px;
+}
+
+.skills h1,h3{
+    font-family: var(--fontsecun);
+    color: var(--cor3);
+}
+
+.skills .barras{
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: var(--cor2);
+    display: block;
+    height: 25px;
+}
+
+.barras div{
+    border-radius: 10px;
+    height: 25px;
+    background: linear-gradient(to right, var(--cor5), var(--cor4));
+}
+
+#lin{
+    width: 50%;
+}
+
+#mat{
+    width: 85%;
+}
+
+#hum{
+    width: 65%;
+}
+
+#cie{
+    width: 70%;
+}
+/**HABILIDADES**/
+
+/**ATIVIDADES**/
+#tra{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.linkcard{
+    cursor: auto;
+}
+
+.card{
+    cursor: pointer;
+    border-radius: 13px;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 500px;
+    background-color: var(--cor5);
+}
+
+.card img{
+    border-radius: 10px;
+    width: 325px;
+    height: 250px;
+}
+
+.card h2{
+    color: var(--cor1);
+    text-align: center;
+    height: 50px;
+    margin: 20px 15px 0px 15px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--fontprin);
+    margin-bottom: 70px;
+}
+
+#tra a{
+    text-decoration: none;
+}
+/**ATIVIDADES**/

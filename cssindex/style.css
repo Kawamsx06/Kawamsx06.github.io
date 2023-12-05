@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+:root{
+    --cor1: #132546;
+    --cor2: #c6D8ff;
+    --cor3: #020236;
+    --cor4: #66615b;
+    --cor5: #99886c;
+
+    --fontprin: 'Exo 2';
+    --fontsecun: 'Montserrat';
+}
+
+html{
+    background-color: var(--cor1);
+}
